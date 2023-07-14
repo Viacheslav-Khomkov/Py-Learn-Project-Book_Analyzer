@@ -1,0 +1,1583 @@
+{
+  "bookname": "The Host",
+  "author": "Stephenie Meyers",
+  "lang": "en",
+  "year": 2008,
+  "paragraphs": [
+    {
+      "text": "The Host",
+      "translation": null,
+      "id": "6fa7ce9f-b19c-4fd1-8bbd-c43b0efd80e3",
+      "parent": "",
+      "prev": ""
+    },
+    {
+      "text": "Stephenie Meyer",
+      "translation": null,
+      "id": "9a1450ea-6c1e-4817-90de-7e8d1e3b3577",
+      "parent": "",
+      "prev": 0
+    },
+    {
+      "text": "To my mother, Candy,",
+      "translation": null,
+      "id": "d602c20e-7f13-4a22-ae4c-0d0a9cef2efc",
+      "parent": "",
+      "prev": 1
+    },
+    {
+      "text": "who taught me that love is the best part of any story",
+      "translation": null,
+      "id": "a3acd00d-cf89-456a-b528-9d2a2afe5a38",
+      "parent": "",
+      "prev": 2
+    },
+    {
+      "text": "QUESTION",
+      "translation": null,
+      "id": "19a834e6-5b3c-44a2-84ce-734717b06938",
+      "parent": "",
+      "prev": 3
+    },
+    {
+      "text": "Body my house",
+      "translation": null,
+      "id": "fee1e8f7-237f-414a-b7ee-3a18b148c98a",
+      "parent": 4,
+      "prev": 4
+    },
+    {
+      "text": "my horse my hound",
+      "translation": null,
+      "id": "92813e26-f5d8-48e8-88d3-e3e835a21b65",
+      "parent": 4,
+      "prev": 5
+    },
+    {
+      "text": "what will I do",
+      "translation": null,
+      "id": "634dba05-6dbc-4c1c-85f6-3c13a6d2455e",
+      "parent": 4,
+      "prev": 6
+    },
+    {
+      "text": "when you are fallen",
+      "translation": null,
+      "id": "3ddfbad6-5f13-4aca-a921-76dfad446809",
+      "parent": 4,
+      "prev": 7
+    },
+    {
+      "text": "Where will I sleep",
+      "translation": null,
+      "id": "c7ca20d8-5076-4f67-b77d-8a1190ef842f",
+      "parent": 4,
+      "prev": 8
+    },
+    {
+      "text": "How will I ride",
+      "translation": null,
+      "id": "8ccd8060-7cac-4ced-ac72-245af5d73c3e",
+      "parent": 4,
+      "prev": 9
+    },
+    {
+      "text": "What will I hunt",
+      "translation": null,
+      "id": "3586ae44-d226-43d9-a541-c0c698806b50",
+      "parent": 4,
+      "prev": 10
+    },
+    {
+      "text": "Where can I go",
+      "translation": null,
+      "id": "5c8fed6c-b10f-44f7-bf51-1a04dcc75573",
+      "parent": 4,
+      "prev": 11
+    },
+    {
+      "text": "without my mount",
+      "translation": null,
+      "id": "4f38a370-25d4-41f3-ac4f-e10162d038c0",
+      "parent": 4,
+      "prev": 12
+    },
+    {
+      "text": "all eager and quick",
+      "translation": null,
+      "id": "d627d513-e0db-4c82-9ccb-6d6032b008d4",
+      "parent": 4,
+      "prev": 13
+    },
+    {
+      "text": "How will I know",
+      "translation": null,
+      "id": "d70ab37a-0406-4229-a0be-f1f60d7f507e",
+      "parent": 4,
+      "prev": 14
+    },
+    {
+      "text": "in thicket ahead",
+      "translation": null,
+      "id": "e592ed9a-8430-4973-bc19-03d7c99f4c3c",
+      "parent": 4,
+      "prev": 15
+    },
+    {
+      "text": "is danger or treasure",
+      "translation": null,
+      "id": "64e98ffc-e2c4-43bf-9ac7-d637cb8e98c6",
+      "parent": 4,
+      "prev": 16
+    },
+    {
+      "text": "When Body my good",
+      "translation": null,
+      "id": "860c85e0-e301-4633-854c-e9b7deabf3c5",
+      "parent": 4,
+      "prev": 17
+    },
+    {
+      "text": "bright dog is dead",
+      "translation": null,
+      "id": "e3194381-dcb8-4bbf-8f44-23630e80b725",
+      "parent": 4,
+      "prev": 18
+    },
+    {
+      "text": "How will it be",
+      "translation": null,
+      "id": "4646b56e-9365-4d6d-b541-1e62efa32ce4",
+      "parent": 4,
+      "prev": 19
+    },
+    {
+      "text": "to lie in the sky",
+      "translation": null,
+      "id": "415ed538-5d39-4708-85fb-f39a4274a760",
+      "parent": 4,
+      "prev": 20
+    },
+    {
+      "text": "without roof or door",
+      "translation": null,
+      "id": "8d45e1bd-f0e7-43c6-8330-30261e8fdd86",
+      "parent": 4,
+      "prev": 21
+    },
+    {
+      "text": "and wind for an eye",
+      "translation": null,
+      "id": "94bea1ab-6ef9-4dee-ad0e-eb3f6e921489",
+      "parent": 4,
+      "prev": 22
+    },
+    {
+      "text": "with cloud for a shift",
+      "translation": null,
+      "id": "c3558a0a-71a3-4bb5-98a1-ffd6cc85034d",
+      "parent": 4,
+      "prev": 23
+    },
+    {
+      "text": "how will I hide?",
+      "translation": null,
+      "id": "08f1bc08-3c22-41c4-a57b-49dd5b376467",
+      "parent": 4,
+      "prev": 24
+    },
+    {
+      "text": "-May Swenson",
+      "translation": null,
+      "id": "7243af89-8954-40a5-b9df-85845db71043",
+      "parent": 4,
+      "prev": 25
+    },
+    {
+      "text": "PROLOGUE",
+      "translation": null,
+      "id": "d9e4de16-3c6c-4e86-b3f6-bdd21e55d4c9",
+      "parent": "",
+      "prev": 26
+    },
+    {
+      "text": "Inserted",
+      "translation": null,
+      "id": "69b2273a-28fa-4201-9f9c-4f074310b3d5",
+      "parent": 27,
+      "prev": 27
+    },
+    {
+      "text": "The Healer's name was Fords Deep Waters.",
+      "translation": null,
+      "id": "aa1f5cbd-d657-4f20-8b5d-fecb0681f99b",
+      "parent": 27,
+      "prev": 28
+    },
+    {
+      "text": "Because he was a soul, by nature he was all things good: compassionate, patient, honest, virtuous, and full of love. Anxiety was an unusual emotion for Fords Deep Waters.",
+      "translation": null,
+      "id": "5c57244d-191f-4a90-8768-370043d476a5",
+      "parent": 27,
+      "prev": 29
+    },
+    {
+      "text": "Irritation was even rarer. However, because Fords Deep Waters lived inside a human body, irritation was sometimes inescapable.",
+      "translation": null,
+      "id": "08b43a03-cddd-4035-bf8e-7df091f258c3",
+      "parent": 27,
+      "prev": 30
+    },
+    {
+      "text": "As the whispers of the Healing students buzzed in the far corner of the operating room, his lips pressed together into a tight line. The expression felt out of place on a mouth more often given to smiling.",
+      "translation": null,
+      "id": "e5ae0029-dd41-4d02-bd8f-4032cc650be6",
+      "parent": 27,
+      "prev": 31
+    },
+    {
+      "text": "Darren, his regular assistant, saw the grimace and patted his shoulder.",
+      "translation": null,
+      "id": "18d5f6c9-d88b-4d60-b97e-fbb7d0ba9a51",
+      "parent": 27,
+      "prev": 32
+    },
+    {
+      "text": "\"They're just curious, Fords,\" he said quietly.",
+      "translation": null,
+      "id": "5c084c87-5935-4d17-9830-b29b3ea3f689",
+      "parent": 27,
+      "prev": 33
+    },
+    {
+      "text": "\"An insertion is hardly an interesting or challenging procedure. Any soul on the street could perform it in an emergency. There's nothing for them to learn by observing today.\" Fords was surprised to hear the sharp edge marring his normally soothing voice.",
+      "translation": null,
+      "id": "7ab4aeda-b58e-4c0a-9d58-09852a357467",
+      "parent": 27,
+      "prev": 34
+    },
+    {
+      "text": "\"They've never seen a grown human before,\" Darren said.",
+      "translation": null,
+      "id": "9481fda0-8b1a-4882-8663-de15c3497db8",
+      "parent": 27,
+      "prev": 35
+    },
+    {
+      "text": "Fords raised one eyebrow. \"Are they blind to each other's faces? Do they not have mirrors?\"",
+      "translation": null,
+      "id": "13c67cf8-cb67-4d3b-9b28-f2a003790f4a",
+      "parent": 27,
+      "prev": 36
+    },
+    {
+      "text": "\"You know what I mean-a wild human. Still soulless. One of the insurgents.\"",
+      "translation": null,
+      "id": "af4905be-4635-4626-80c0-47ef5d6fb852",
+      "parent": 27,
+      "prev": 37
+    },
+    {
+      "text": "Fords looked at the girl's unconscious body, laid out facedown on the operating table. Pity swelled in his heart as he remembered the condition her poor, broken body had been in when the Seekers had brought her to the Healing facility. Such pain she'd endured....",
+      "translation": null,
+      "id": "c314dc6e-123a-4bb2-8ad8-d5d9abf91fe6",
+      "parent": 27,
+      "prev": 38
+    },
+    {
+      "text": "Of course she was perfect now-completely healed. Fords had seen to that.",
+      "translation": null,
+      "id": "d50e50f3-7c30-4225-98dd-4ac58173c744",
+      "parent": 27,
+      "prev": 39
+    },
+    {
+      "text": "\"She looks the same as any of us,\" Fords murmured to Darren. \"We all have human faces. And when she wakes up, she will be one of us, too.\"",
+      "translation": null,
+      "id": "8ba392c8-f63d-4f8c-9343-da8f8752fd1a",
+      "parent": 27,
+      "prev": 40
+    },
+    {
+      "text": "\"It's just exciting for them, that's all.\"",
+      "translation": null,
+      "id": "ead8d8c0-27fb-4ec3-ba3f-02965b4512ff",
+      "parent": 27,
+      "prev": 41
+    },
+    {
+      "text": "\"The soul we implant today deserves more respect than to have her host body gawked at this way. She'll already have far too much to deal with as she acclimates. It's not fair to put her through this.\" By this, he did not mean the gawking. Fords heard the sharp edge return to his voice.",
+      "translation": null,
+      "id": "f648c9bb-1d50-4990-88a3-f7ba8b30ef7b",
+      "parent": 27,
+      "prev": 42
+    },
+    {
+      "text": "Darren patted him again. \"It will be fine. The Seeker needs information and -\"",
+      "translation": null,
+      "id": "f5fb07da-2695-44bd-80f4-4b0596b266d4",
+      "parent": 27,
+      "prev": 43
+    },
+    {
+      "text": "At the word Seeker, Fords gave Darren a look that could only be described as a glare. Darren blinked in shock.",
+      "translation": null,
+      "id": "9ca9de98-adca-4991-a50a-025e65edbe6a",
+      "parent": 27,
+      "prev": 44
+    },
+    {
+      "text": "\"I'm sorry,\" Fords apologized at once. \"I didn't mean to react so negatively. It's just that I fear for this soul.\"",
+      "translation": null,
+      "id": "773c12ec-d007-49de-abd2-9350ade25c02",
+      "parent": 27,
+      "prev": 45
+    },
+    {
+      "text": "His eyes moved to the cryotank on its stand beside the table. The light was a steady, dull red, indicating that it was occupied and in hibernation mode.",
+      "translation": null,
+      "id": "375571a1-1912-44cf-b545-3d3901b0cb6e",
+      "parent": 27,
+      "prev": 46
+    },
+    {
+      "text": "\"This soul was specially picked for the assignment,\" Darren said soothingly. \"She is exceptional among our kind-braver than most. Her lives speak for themselves. I think she would volunteer, if it were possible to ask her.\"",
+      "translation": null,
+      "id": "a5a9b14e-175e-49b4-baf9-bed341f99c4f",
+      "parent": 27,
+      "prev": 47
+    },
+    {
+      "text": "\"Who among us would not volunteer if asked to do something for the greater good? But is that really the case here? Is the greater good served by this? The question is not her willingness, but what it is right to ask any soul to bear.\"",
+      "translation": null,
+      "id": "6f915b3b-4f5d-4232-927c-1d5980c37487",
+      "parent": 27,
+      "prev": 48
+    },
+    {
+      "text": "The Healing students were discussing the hibernating soul as well. Fords could hear the whispers clearly; their voices were rising now, getting louder with their excitement.",
+      "translation": null,
+      "id": "9379278d-c1e6-434b-a040-04bb980566b5",
+      "parent": 27,
+      "prev": 49
+    },
+    {
+      "text": "\"She's lived on six planets.\"",
+      "translation": null,
+      "id": "b9bd9c1b-09b7-4cf9-8c3b-6ea708f88547",
+      "parent": 27,
+      "prev": 50
+    },
+    {
+      "text": "\"I heard seven.\"",
+      "translation": null,
+      "id": "f8421dcd-b710-4b80-97f9-681167814e06",
+      "parent": 27,
+      "prev": 51
+    },
+    {
+      "text": "\"I heard she's never lived two terms as the same host species.\"",
+      "translation": null,
+      "id": "2b3b53cb-4d1f-41eb-ad93-1e977be05756",
+      "parent": 27,
+      "prev": 52
+    },
+    {
+      "text": "\"Is that possible?\"",
+      "translation": null,
+      "id": "758f0afe-21f8-4f0e-be30-d9df2fcd9746",
+      "parent": 27,
+      "prev": 53
+    },
+    {
+      "text": "\"She's been almost everything. A Flower, a Bear, a Spider -\"",
+      "translation": null,
+      "id": "6fccf5e0-4559-4c4a-a69d-3be084bcf37e",
+      "parent": 27,
+      "prev": 54
+    },
+    {
+      "text": "\"A See Weed, a Bat -\"",
+      "translation": null,
+      "id": "b5b517f3-a215-4a6b-9d13-a76c804b6c47",
+      "parent": 27,
+      "prev": 55
+    },
+    {
+      "text": "\"Even a Dragon!\"",
+      "translation": null,
+      "id": "a066db68-0a75-4d8f-88d9-2e1776697d99",
+      "parent": 27,
+      "prev": 56
+    },
+    {
+      "text": "\"I don't believe it-not seven planets.\"",
+      "translation": null,
+      "id": "2db18178-c794-4402-868b-4412c2450a12",
+      "parent": 27,
+      "prev": 57
+    },
+    {
+      "text": "\"At least seven. She started on the Origin.\"",
+      "translation": null,
+      "id": "e34d08f2-bddb-4528-acef-246603352fed",
+      "parent": 27,
+      "prev": 58
+    },
+    {
+      "text": "\"Really? The Origin?\"",
+      "translation": null,
+      "id": "a3979239-b317-4efd-940b-e9d1fe4193dd",
+      "parent": 27,
+      "prev": 59
+    },
+    {
+      "text": "\"Quiet, please!\" Fords interrupted. \"If you cannot observe professionally and silently, then I will have to ask you to remove yourselves.\"",
+      "translation": null,
+      "id": "f64426de-160a-4093-95dd-f93ff668cabb",
+      "parent": 27,
+      "prev": 60
+    },
+    {
+      "text": "Abashed, the six students fell silent and edged away from one another.",
+      "translation": null,
+      "id": "760fd0a4-c3df-4de9-8815-1d1959ab4cdb",
+      "parent": 27,
+      "prev": 61
+    },
+    {
+      "text": "\"Let's get on with this, Darren.\"",
+      "translation": null,
+      "id": "88308422-488d-406a-997a-12a25cce4281",
+      "parent": 27,
+      "prev": 62
+    },
+    {
+      "text": "Everything was prepared. The appropriate medicines were laid out beside the human girl. Her long dark hair was secured beneath a surgical cap, exposing her slender neck. Deeply sedated, she breathed slowly in and out. Her sun-browned skin had barely a mark to show for her... accident.",
+      "translation": null,
+      "id": "35de8659-d299-4ebe-9a0c-65a4dbf2da72",
+      "parent": 27,
+      "prev": 63
+    },
+    {
+      "text": "\"Begin thaw sequence now, please, Darren.\"",
+      "translation": null,
+      "id": "0252921e-0004-417a-a191-482ed3d3a522",
+      "parent": 27,
+      "prev": 64
+    },
+    {
+      "text": "The gray-haired assistant was already waiting beside the cryotank, his hand resting on the dial. He flipped the safety back and spun down on the dial. The red light atop the small gray cylinder began to pulse, flashing faster as the seconds passed, changing color.",
+      "translation": null,
+      "id": "43e1b6d2-bebf-4663-b647-4e8eb4d0d4f8",
+      "parent": 27,
+      "prev": 65
+    },
+    {
+      "text": "Fords concentrated on the unconscious body; he edged the scalpel through the skin at the base of the subject's skull with small, precise movements, and then sprayed on the medication that stilled the excess flow of blood before he widened the fissure. Fords delved delicately beneath the neck muscles, careful not to injure them, exposing the pale bones at the top of the spinal column.",
+      "translation": null,
+      "id": "7641c564-3f07-4670-9dcc-c14e772e6074",
+      "parent": 27,
+      "prev": 66
+    },
+    {
+      "text": "\"The soul is ready, Fords,\" Darren informed him.",
+      "translation": null,
+      "id": "888f4ef9-fbbf-498d-8deb-7d31ec62c2f5",
+      "parent": 27,
+      "prev": 67
+    },
+    {
+      "text": "\"So am I. Bring her.\"",
+      "translation": null,
+      "id": "c2096dd8-7ab5-45dd-a10e-8efe376e0072",
+      "parent": 27,
+      "prev": 68
+    },
+    {
+      "text": "Fords felt Darren at his elbow and knew without looking that his assistant would be prepared, his hand stretched out and waiting; they had worked together for many years now. Fords held the gap open.",
+      "translation": null,
+      "id": "fb8b38c9-a2e6-4487-92aa-67d78b6578ca",
+      "parent": 27,
+      "prev": 69
+    },
+    {
+      "text": "\"Send her home,\" he whispered.",
+      "translation": null,
+      "id": "6243a215-e8f4-4965-bc1c-688e4031ae7e",
+      "parent": 27,
+      "prev": 70
+    },
+    {
+      "text": "Darren's hand moved into view, the silver gleam of an awaking soul in his cupped palm.",
+      "translation": null,
+      "id": "5d289a82-1eff-42f1-922f-188ce1951ac8",
+      "parent": 27,
+      "prev": 71
+    },
+    {
+      "text": "Fords never saw an exposed soul without being struck by the beauty of it.",
+      "translation": null,
+      "id": "536de0c3-7cb0-428d-85d8-757b987ac4af",
+      "parent": 27,
+      "prev": 72
+    },
+    {
+      "text": "The soul shone in the brilliant lights of the operating room, brighter than the reflective silver instrument in his hand. Like a living ribbon, she twisted and rippled, stretching, happy to be free of the cryotank. Her thin, feathery attachments, nearly a thousand of them, billowed softly like pale silver hair. Though they were all lovely, this one seemed particularly graceful to Fords Deep Waters.",
+      "translation": null,
+      "id": "cdf2dfc7-ad0e-43f5-8e9d-084a2b50a37c",
+      "parent": 27,
+      "prev": 73
+    },
+    {
+      "text": "He was not alone in his reaction. He heard Darren's soft sigh, heard the admiring murmurs of the students.",
+      "translation": null,
+      "id": "892a82ad-732e-4f3a-a695-720dc1e3e09a",
+      "parent": 27,
+      "prev": 74
+    },
+    {
+      "text": "Gently, Darren placed the small glistening creature inside the opening Fords had made in the human's neck. The soul slid smoothly into the offered space, weaving herself into the alien anatomy. Fords admired the skill with which she possessed her new home. Her attachments wound tightly into place around the nerve centers, some elongating and reaching deeper to where he couldn't see, under and up into the brain, the optic nerves, the ear canals. She was very quick, very firm in her movements. Soon, only one small segment of her glistening body was visible.",
+      "translation": null,
+      "id": "f2c792f4-bede-4a86-b810-ae750d99d280",
+      "parent": 27,
+      "prev": 75
+    },
+    {
+      "text": "\"Well done,\" he whispered to her, knowing that she could not hear him. The human girl was the one with ears, and she still slept soundly.",
+      "translation": null,
+      "id": "49cd5299-f4a5-45db-a0e3-7b83518a51cf",
+      "parent": 27,
+      "prev": 76
+    },
+    {
+      "text": "It was a routine matter to finish the job. He cleaned and healed the wound, applied the salve that sealed the incision closed behind the soul, and then brushed the scar-softening powder across the line left on her neck.",
+      "translation": null,
+      "id": "12232d5c-a613-41b8-9b49-1b4443f2424e",
+      "parent": 27,
+      "prev": 77
+    },
+    {
+      "text": "\"Perfect, as usual,\" said the assistant, who, for some reason unfathomable to Fords, had never made a change from his human host's name, Darren.",
+      "translation": null,
+      "id": "992dec25-ccb7-4488-82ad-d4b3c99db4d6",
+      "parent": 27,
+      "prev": 78
+    },
+    {
+      "text": "Fords sighed. \"I regret this day's work.\"",
+      "translation": null,
+      "id": "acc035a8-e855-4c27-a557-26563fecd861",
+      "parent": 27,
+      "prev": 79
+    },
+    {
+      "text": "\"You're only doing your duty as a Healer.\"",
+      "translation": null,
+      "id": "2bb25806-1c5c-45b6-a956-493265166c21",
+      "parent": 27,
+      "prev": 80
+    },
+    {
+      "text": "\"This is the rare occasion when Healing creates an injury.\"",
+      "translation": null,
+      "id": "7d63a19c-b427-4aae-9111-0cc94b5bd81b",
+      "parent": 27,
+      "prev": 81
+    },
+    {
+      "text": "Darren began to clean up the workstation. He didn't seem to know how to answer. Fords was filling his Calling. That was enough for Darren.",
+      "translation": null,
+      "id": "a6c60ac8-a4b1-4d87-93e2-85c83f1677a4",
+      "parent": 27,
+      "prev": 82
+    },
+    {
+      "text": "But not enough for Fords Deep Waters, who was a true Healer to the core of his being. He gazed anxiously at the human female's body, peaceful in slumber, knowing that this peace would be shattered as soon as she awoke. All the horror of this young woman's end would be borne by the innocent soul he'd just placed inside her.",
+      "translation": null,
+      "id": "da5204e8-1966-4412-91d9-d4ac952a3aab",
+      "parent": 27,
+      "prev": 83
+    },
+    {
+      "text": "As he leaned over the human and whispered in her ear, Fords wished fervently that the soul inside could hear him now.",
+      "translation": null,
+      "id": "03f373db-2ec4-4664-ac14-a0a9fa8d948f",
+      "parent": 27,
+      "prev": 84
+    },
+    {
+      "text": "\"Good luck, little wanderer, good luck. How I wish you didn't need it.\"",
+      "translation": null,
+      "id": "9c1a434b-b91f-4f57-b2ab-cb590c4c0696",
+      "parent": 27,
+      "prev": 85
+    },
+    {
+      "text": "CHAPTER 1",
+      "translation": null,
+      "id": "785b24a8-d314-4fd4-bd0e-eb7f3a061bcb",
+      "parent": "",
+      "prev": 86
+    },
+    {
+      "text": "Remembered",
+      "translation": null,
+      "id": "70edb932-5d4f-4c1e-8824-8d8913046b0a",
+      "parent": 87,
+      "prev": 87
+    },
+    {
+      "text": "Iknew it would begin with the end, and the end would look like death to these eyes. I had been warned.",
+      "translation": null,
+      "id": "d9f96f5d-98b1-4c6d-9a96-301ccf1a9c6d",
+      "parent": 87,
+      "prev": 88
+    },
+    {
+      "text": "Not these eyes. My eyes. Mine. This was me now.",
+      "translation": null,
+      "id": "df16df9f-92a8-4005-a3a6-1821845bf436",
+      "parent": 87,
+      "prev": 89
+    },
+    {
+      "text": "The language I found myself using was odd, but it made sense. Choppy, boxy, blind, and linear. Impossibly crippled in comparison to many I'd used, yet still it managed to find fluidity and expression. Sometimes beauty. My language now. My native tongue.",
+      "translation": null,
+      "id": "8e423a1a-db56-43db-8372-170d7f209b24",
+      "parent": 87,
+      "prev": 90
+    },
+    {
+      "text": "With the truest instinct of my kind, I'd bound myself securely into the body's center of thought, twined myself inescapably into its every breath and reflex until it was no longer a separate entity. It was me.",
+      "translation": null,
+      "id": "4e72bf96-5af7-4082-9680-10e0771a388a",
+      "parent": 87,
+      "prev": 91
+    },
+    {
+      "text": "Not the body, my body.",
+      "translation": null,
+      "id": "3544803f-dad9-49e1-969e-9a2f6e8fbab7",
+      "parent": 87,
+      "prev": 92
+    },
+    {
+      "text": "I felt the sedation wearing off and lucidity taking its place. I braced myself for the onslaught of the first memory, which would really be the last memory-the last moments this body had experienced, the memory of the end. I had been warned thoroughly of what would happen now. These human emotions would be stronger, more vital than the feelings of any other species I had been. I had tried to prepare myself.",
+      "translation": null,
+      "id": "258db020-31ce-4f25-871f-ea93e573f41d",
+      "parent": 87,
+      "prev": 93
+    },
+    {
+      "text": "The memory came. And, as I'd been warned, it was not something that could ever be prepared for.",
+      "translation": null,
+      "id": "a4894c89-d58c-4da2-b65d-b539fd265ab3",
+      "parent": 87,
+      "prev": 94
+    },
+    {
+      "text": "It seared with sharp color and ringing sound. Cold on her skin, pain gripping her limbs, burning them. The taste was fiercely metallic in her mouth. And there was the new sense, the fifth sense I'd never had, that took the particles from the air and transformed them into strange messages and pleasures and warnings in her brain-scents. They were distracting, confusing to me, but not to her memory. The memory had no time for the novelties of smell. The memory was only fear.",
+      "translation": null,
+      "id": "6c4ad110-9695-462e-bac7-0a939d2e90c5",
+      "parent": 87,
+      "prev": 95
+    },
+    {
+      "text": "Fear locked her in a vise, goading the blunt, clumsy limbs forward but hampering them at the same time. To flee, to run-it was all she could do.",
+      "translation": null,
+      "id": "05029606-2ef9-4ff5-a2a9-a0995b7a4003",
+      "parent": 87,
+      "prev": 96
+    },
+    {
+      "text": "I've failed.",
+      "translation": null,
+      "id": "e2a5aced-d0be-4b3f-8de7-62516df8e8ba",
+      "parent": 87,
+      "prev": 97
+    },
+    {
+      "text": "The memory that was not mine was so frighteningly strong and clear that it sliced through my control-overwhelmed the detachment, the knowledge that this was just a memory and not me. Sucked into the hell that was the last minute of her life, I was she, and we were running.",
+      "translation": null,
+      "id": "0f5e5085-397a-4f4c-be44-954e9ce5a146",
+      "parent": 87,
+      "prev": 98
+    },
+    {
+      "text": "It's so dark. I can't see. I can't see the floor. I can't see my hands stretched out in front of me. I run blind and try to hear the pursuit I can feel behind me, but the pulse is so loud behind my ears it drowns everything else out.",
+      "translation": null,
+      "id": "789cc0f5-f408-403e-acd7-31f1542fe8aa",
+      "parent": 87,
+      "prev": 99
+    },
+    {
+      "text": "It's cold. It shouldn't matter now, but it hurts. I'm so cold.",
+      "translation": null,
+      "id": "a4016166-f5a1-4a35-877c-20d962daa9b5",
+      "parent": 87,
+      "prev": 100
+    },
+    {
+      "text": "The air in her nose was uncomfortable. Bad. A bad smell. For one second, that discomfort pulled me free of the memory. But it was only a second, and then I was dragged in again, and my eyes filled with horrified tears.",
+      "translation": null,
+      "id": "4adaf23a-29e5-470a-b020-f0253217a629",
+      "parent": 87,
+      "prev": 101
+    },
+    {
+      "text": "I'm lost, we're lost. It's over.",
+      "translation": null,
+      "id": "b869091a-4398-4271-b9f2-2ed226c18b2e",
+      "parent": 87,
+      "prev": 102
+    },
+    {
+      "text": "They're right behind me now, loud and close. There are so many footsteps! I am alone. I've failed.",
+      "translation": null,
+      "id": "7ba3531b-6d5c-4351-9054-47a6d104ce45",
+      "parent": 87,
+      "prev": 103
+    },
+    {
+      "text": "The Seekers are calling. The sound of their voices twists my stomach. I'm going to be sick.",
+      "translation": null,
+      "id": "ae2195bb-c8dc-45ae-9c8e-6d5131fd56ec",
+      "parent": 87,
+      "prev": 104
+    },
+    {
+      "text": "\"It's fine, it's fine,\" one lies, trying to calm me, to slow me. Her voice is disturbed by the effort of her breathing.",
+      "translation": null,
+      "id": "d00830ec-407e-4d62-8046-0e199e0b9076",
+      "parent": 87,
+      "prev": 105
+    },
+    {
+      "text": "\"Be careful!\" another shouts in warning.",
+      "translation": null,
+      "id": "15cae04d-b542-4c37-a5cb-aa0cb3889f45",
+      "parent": 87,
+      "prev": 106
+    },
+    {
+      "text": "\"Don't hurt yourself,\" one of them pleads. A deep voice, full of concern.",
+      "translation": null,
+      "id": "b29b67a0-68d8-4dbc-a8ff-b39a4ffb4467",
+      "parent": 87,
+      "prev": 107
+    },
+    {
+      "text": "Concern!",
+      "translation": null,
+      "id": "32b93e3b-0150-4e66-964a-9a9b79f1c095",
+      "parent": 87,
+      "prev": 108
+    },
+    {
+      "text": "Heat shot through my veins, and a violent hatred nearly choked me.",
+      "translation": null,
+      "id": "af22bcd5-37fc-4554-8ef0-f52b68ca4ba7",
+      "parent": 87,
+      "prev": 109
+    },
+    {
+      "text": "I had never felt such an emotion as this in all my lives. For another second, my revulsion pulled me away from the memory. A high, shrill keening pierced my ears and pulsed in my head. The sound scraped through my airways. There was a weak pain in my throat.",
+      "translation": null,
+      "id": "88a672bb-74fc-499f-a535-553405f91595",
+      "parent": 87,
+      "prev": 110
+    },
+    {
+      "text": "Screaming, my body explained. You're screaming.",
+      "translation": null,
+      "id": "b1adbde1-0d32-4e4d-88de-d8c700accd53",
+      "parent": 87,
+      "prev": 111
+    },
+    {
+      "text": "I froze in shock, and the sound broke off abruptly.",
+      "translation": null,
+      "id": "43620308-7b6a-4700-a6eb-4878d544dd51",
+      "parent": 87,
+      "prev": 112
+    },
+    {
+      "text": "This was not a memory.",
+      "translation": null,
+      "id": "f8e2e472-037f-48c8-823b-1bf0da1f3606",
+      "parent": 87,
+      "prev": 113
+    },
+    {
+      "text": "My body-she was thinking! Speaking to me!",
+      "translation": null,
+      "id": "456d4ec7-d315-48e1-806b-0742a8489126",
+      "parent": 87,
+      "prev": 114
+    },
+    {
+      "text": "But the memory was stronger, in that moment, than my astonishment.",
+      "translation": null,
+      "id": "b3237e40-ed9a-4e91-91cd-722dac7a92ac",
+      "parent": 87,
+      "prev": 115
+    },
+    {
+      "text": "\"Please!\" they cry. \"There is danger ahead!\"",
+      "translation": null,
+      "id": "d78b1895-efb0-4acc-b2b6-d0f62bfe6f59",
+      "parent": 87,
+      "prev": 116
+    },
+    {
+      "text": "The danger is behind! I scream back in my mind. But I see what they mean. A feeble stream of light, coming from who knows where, shines on the end of the hall. It is not the flat wall or the locked door, the dead end I feared and expected. It is a black hole.",
+      "translation": null,
+      "id": "d80dd113-406b-446b-9816-2c2459082e47",
+      "parent": 87,
+      "prev": 117
+    },
+    {
+      "text": "An elevator shaft. Abandoned, empty, and condemned, like this building. Once a hiding place, now a tomb.",
+      "translation": null,
+      "id": "42866af5-0af5-4a09-a3f4-00730f4dc3ab",
+      "parent": 87,
+      "prev": 118
+    },
+    {
+      "text": "A surge of relief floods through me as I race forward. There is a way. No way to survive, but perhaps a way to win.",
+      "translation": null,
+      "id": "c6cd85a6-1401-4580-b145-3656f8f819ae",
+      "parent": 87,
+      "prev": 119
+    },
+    {
+      "text": "No, no, no! This thought was all mine, and I fought to pull myself away from her, but we were together. And we sprinted for the edge of death.",
+      "translation": null,
+      "id": "d3bede67-e939-414b-914d-a016a30c5f87",
+      "parent": 87,
+      "prev": 120
+    },
+    {
+      "text": "\"Please!\" The shouts are more desperate.",
+      "translation": null,
+      "id": "72bcb31d-020e-4cfd-911f-284f3c8ba3ec",
+      "parent": 87,
+      "prev": 121
+    },
+    {
+      "text": "I feel like laughing when I know that I am fast enough. I imagine their hands clutching for me just inches behind my back. But I am as fast as I need to be. I don't even pause at the end of the floor. The hole rises up to meet me midstride.",
+      "translation": null,
+      "id": "0a0e5152-db3f-4544-a8ec-f8c0bd8a2dd8",
+      "parent": 87,
+      "prev": 122
+    },
+    {
+      "text": "The emptiness swallows me. My legs flail, useless. My hands grip the air, claw through it, searching for anything solid. Cold blows past me like tornado winds.",
+      "translation": null,
+      "id": "4bfbd9ef-607f-459a-aa88-08278e32912d",
+      "parent": 87,
+      "prev": 123
+    },
+    {
+      "text": "I hear the thud before I feel it.... The wind is gone....",
+      "translation": null,
+      "id": "5768769b-38f3-444e-90c3-2a286db02417",
+      "parent": 87,
+      "prev": 124
+    },
+    {
+      "text": "And then pain is everywhere.... Pain is everything.",
+      "translation": null,
+      "id": "d6539349-7d03-4a3f-a824-e63a5f750795",
+      "parent": 87,
+      "prev": 125
+    },
+    {
+      "text": "Make it stop.",
+      "translation": null,
+      "id": "78ff60f6-8952-4198-9f7f-fe394d8d83cd",
+      "parent": 87,
+      "prev": 126
+    },
+    {
+      "text": "Not high enough, I whisper to myself through the pain.",
+      "translation": null,
+      "id": "e97d7778-c9e0-4877-b10d-2104bbb953ce",
+      "parent": 87,
+      "prev": 127
+    },
+    {
+      "text": "When will the pain end? When... ?",
+      "translation": null,
+      "id": "46971004-de06-43f5-a40f-644e73f9a2f9",
+      "parent": 87,
+      "prev": 128
+    },
+    {
+      "text": "The blackness swallowed up the agony, and I was weak with gratitude that the memory had come to this most final of conclusions. The blackness took all, and I was free. I took a breath to steady myself, as was this body's habit. My body.",
+      "translation": null,
+      "id": "93e13568-aa5d-4982-8e6a-4a03f8518f92",
+      "parent": 87,
+      "prev": 129
+    },
+    {
+      "text": "But then the color rushed back, the memory reared up and engulfed me again.",
+      "translation": null,
+      "id": "df716e4f-e694-43c5-a411-5eb3861b51b3",
+      "parent": 87,
+      "prev": 130
+    },
+    {
+      "text": "No! I panicked, fearing the cold and the pain and the very fear itself.",
+      "translation": null,
+      "id": "a8d8eb49-5e63-46fe-863e-12ff12bfc239",
+      "parent": 87,
+      "prev": 131
+    },
+    {
+      "text": "But this was not the same memory. This was a memory within a memory-a final memory, like a last gasp of air-yet, somehow, even stronger than the first.",
+      "translation": null,
+      "id": "39fdc836-c5ee-495a-b06e-44149a05c60d",
+      "parent": 87,
+      "prev": 132
+    },
+    {
+      "text": "The blackness took all but this: a face.",
+      "translation": null,
+      "id": "33f52491-9537-4b85-ba85-dd13508f3789",
+      "parent": 87,
+      "prev": 133
+    },
+    {
+      "text": "The face was as alien to me as the faceless serpentine tentacles of my last host body would be to this new body. I'd seen this kind of face in the images I had been given to prepare for this world. It was hard to tell them apart, to see the tiny variations in color and shape that were the only markers of the individual. So much the same, all of them. Noses centered in the middle of the sphere, eyes above and mouths below, ears around the sides. A collection of senses, all but touch, concentrated in one place. Skin over bones, hair growing on the crown and in strange furry lines above the eyes. Some had more fur lower down on the jaw; those were always males. The colors ranged through the brown scale from pale cream to a deep almost-black. Aside from that, how to know one from the other?",
+      "translation": null,
+      "id": "b13bc396-e0fa-4a3a-af74-15467a21dc84",
+      "parent": 87,
+      "prev": 134
+    },
+    {
+      "text": "This face I would have known among millions.",
+      "translation": null,
+      "id": "2a3ad42c-f86b-42f4-aa74-4f6e503e0e49",
+      "parent": 87,
+      "prev": 135
+    },
+    {
+      "text": "This face was a hard rectangle, the shape of the bones strong under the skin. In color it was a light golden brown. The hair was just a few shades darker than the skin, except where flaxen streaks lightened it, and it covered only the head and the odd fur stripes above the eyes. The circular irises in the white eyeballs were darker than the hair but, like the hair, flecked with light. There were small lines around the eyes, and her memories told me the lines were from smiling and squinting into sunlight.",
+      "translation": null,
+      "id": "58f648fc-93cd-445c-a74c-0d0b81e9264c",
+      "parent": 87,
+      "prev": 136
+    },
+    {
+      "text": "I knew nothing of what passed for beauty among these strangers, and yet I knew that this face was beautiful. I wanted to keep looking at it. As soon as I realized this, it disappeared.",
+      "translation": null,
+      "id": "c295568b-7fec-4ed9-9d2c-876a7ab1c0bf",
+      "parent": 87,
+      "prev": 137
+    },
+    {
+      "text": "Mine, spoke the alien thought that should not have existed.",
+      "translation": null,
+      "id": "0fd69518-bcbb-41ff-8041-1f6d26d79d99",
+      "parent": 87,
+      "prev": 138
+    },
+    {
+      "text": "Again, I was frozen, stunned. There should have been no one here but me. And yet this thought was so strong and so aware!",
+      "translation": null,
+      "id": "53fb5638-ea39-4375-be74-744a59bcc905",
+      "parent": 87,
+      "prev": 139
+    },
+    {
+      "text": "Impossible. How was she still here? This was me now.",
+      "translation": null,
+      "id": "28db082d-0172-4f22-b61a-12fb2bd92d98",
+      "parent": 87,
+      "prev": 140
+    },
+    {
+      "text": "Mine, I rebuked her, the power and authority that belonged to me alone flowing through the word. Everything is mine.",
+      "translation": null,
+      "id": "a1cfec60-102c-41f7-a99c-3f92dbc4140d",
+      "parent": 87,
+      "prev": 141
+    },
+    {
+      "text": "So why am I talking back to her? I wondered as the voices interrupted my thoughts.",
+      "translation": null,
+      "id": "186386eb-6786-4318-9ebd-ada1dd5c5ce0",
+      "parent": 87,
+      "prev": 142
+    },
+    {
+      "text": "CHAPTER 2",
+      "translation": null,
+      "id": "f870d0f8-5fbf-4c40-a3d0-7fbb5497e0cf",
+      "parent": "",
+      "prev": 143
+    },
+    {
+      "text": "Overheard",
+      "translation": null,
+      "id": "43d19f8e-f232-4535-b8f5-5cf7350b395d",
+      "parent": 144,
+      "prev": 144
+    },
+    {
+      "text": "The voices were soft and close and, though I was only now aware of them, apparently in the middle of a murmured conversation.",
+      "translation": null,
+      "id": "e1291e1b-5806-4d76-9f46-cffea0c0c93c",
+      "parent": 144,
+      "prev": 145
+    },
+    {
+      "text": "\"I'm afraid it's too much for her,\" one said. The voice was soft but deep, male. \"Too much for anyone. Such violence!\" The tone spoke of revulsion.",
+      "translation": null,
+      "id": "4ca8debd-f3d6-4fa0-ab05-f0606e1c6fa6",
+      "parent": 144,
+      "prev": 146
+    },
+    {
+      "text": "\"She screamed only once,\" said a higher, reedy, female voice, pointing this out with a hint of glee, as if she were winning an argument.",
+      "translation": null,
+      "id": "42112ac4-c510-47c8-b552-2440b2ddbdc5",
+      "parent": 144,
+      "prev": 147
+    },
+    {
+      "text": "\"I know,\" the man admitted. \"She is very strong. Others have had much more trauma, with much less cause.\"",
+      "translation": null,
+      "id": "f008f819-4c64-4271-91f0-20c6be663268",
+      "parent": 144,
+      "prev": 148
+    },
+    {
+      "text": "\"I'm sure she'll be fine, just as I told you.\"",
+      "translation": null,
+      "id": "25d95acb-f14f-4cf7-8732-2e7fe906ad29",
+      "parent": 144,
+      "prev": 149
+    },
+    {
+      "text": "\"Maybe you missed your Calling.\" There was an edge to the man's voice. Sarcasm, my memory named it. \"Perhaps you were meant to be a Healer, like me.\"",
+      "translation": null,
+      "id": "707622d9-8026-4223-a727-d00bd2bace79",
+      "parent": 144,
+      "prev": 150
+    },
+    {
+      "text": "The woman made a sound of amusement. Laughter. \"I doubt that. We Seekers prefer a different sort of diagnosis.\"",
+      "translation": null,
+      "id": "7f5d4722-4a2a-41f7-a84a-697a6645cf8f",
+      "parent": 144,
+      "prev": 151
+    },
+    {
+      "text": "My body knew this word, this title: Seeker. It sent a shudder of fear down my spine. A leftover reaction. Of course, I had no reason to fear Seekers.",
+      "translation": null,
+      "id": "c49b5301-0c24-4eed-849f-899fa68cdba8",
+      "parent": 144,
+      "prev": 152
+    },
+    {
+      "text": "\"I sometimes wonder if the infection of humanity touches those in your profession,\" the man mused, his voice still sour with annoyance. \"Violence is part of your life choice. Does enough of your body's native temperament linger to give you enjoyment of the horror?\"",
+      "translation": null,
+      "id": "679a4732-a5e6-499e-83cc-8c3562c56839",
+      "parent": 144,
+      "prev": 153
+    },
+    {
+      "text": "I was surprised at his accusation, at his tone. This discussion was almost like... an argument. Something my host was familiar with but that I'd never experienced.",
+      "translation": null,
+      "id": "4945d757-8b4f-449c-8b81-1f9e96afa108",
+      "parent": 144,
+      "prev": 154
+    },
+    {
+      "text": "The woman was defensive. \"We do not choose violence. We face it when we must. And it's a good thing for the rest of you that some of us are strong enough for the unpleasantness. Your peace would be shattered without our work.\"",
+      "translation": null,
+      "id": "3668d989-9c94-418f-a59a-4885c2ff0843",
+      "parent": 144,
+      "prev": 155
+    },
+    {
+      "text": "\"Once upon a time. Your vocation will soon be obsolete, I think.\"",
+      "translation": null,
+      "id": "bf75783c-e9d9-4bdb-b076-0099e6f4eb74",
+      "parent": 144,
+      "prev": 156
+    },
+    {
+      "text": "\"The error of that statement lies on the bed there.\"",
+      "translation": null,
+      "id": "c7a2e69c-20b4-42a6-9812-daf9019052fe",
+      "parent": 144,
+      "prev": 157
+    },
+    {
+      "text": "\"One human girl, alone and unarmed! Yes, quite a threat to our peace.\"",
+      "translation": null,
+      "id": "9701366e-402e-4ab9-9854-a467a933614a",
+      "parent": 144,
+      "prev": 158
+    },
+    {
+      "text": "The woman breathed out heavily. A sigh. \"But where did she come from? How did she appear in the middle of Chicago, a city long since civilized, hundreds of miles from any trace of rebel activity? Did she manage it alone?\"",
+      "translation": null,
+      "id": "d677c929-3d96-4241-bd41-5a77730175b0",
+      "parent": 144,
+      "prev": 159
+    },
+    {
+      "text": "She listed the questions without seeming to seek an answer, as if she had already voiced them many times.",
+      "translation": null,
+      "id": "1ce9b2b9-d208-40eb-8e7a-a97c77663939",
+      "parent": 144,
+      "prev": 160
+    },
+    {
+      "text": "\"That's your problem, not mine,\" the man said. \"My job is to help this soul adapt herself to her new host without unnecessary pain or trauma. And you are here to interfere with my job.\"",
+      "translation": null,
+      "id": "90b4e08e-aea5-44da-a696-393d60c01215",
+      "parent": 144,
+      "prev": 161
+    },
+    {
+      "text": "Still slowly surfacing, acclimating myself to this new world of senses, I understood only now that I was the subject of the conversation. I was the soul they spoke of. It was a new connotation to the word, a word that had meant many other things to my host. On every planet we took a different name. Soul. I suppose it was an apt description. The unseen force that guides the body.",
+      "translation": null,
+      "id": "7be7dae3-defc-4ca1-a481-8b510120b649",
+      "parent": 144,
+      "prev": 162
+    },
+    {
+      "text": "\"The answers to my questions matter as much as your responsibilities to the soul.\"",
+      "translation": null,
+      "id": "157ecca9-3f8b-4386-8c6a-aec6c2b14fb8",
+      "parent": 144,
+      "prev": 163
+    },
+    {
+      "text": "\"That's debatable.\"",
+      "translation": null,
+      "id": "8cf9a112-ac3f-41d8-bae0-afb19c3ccc7c",
+      "parent": 144,
+      "prev": 164
+    },
+    {
+      "text": "There was the sound of movement, and her voice was suddenly a whisper. \"When will she become responsive? The sedation must be about to wear off.\"",
+      "translation": null,
+      "id": "f633f5f8-7a19-4234-ac0d-08eb255abc9a",
+      "parent": 144,
+      "prev": 165
+    },
+    {
+      "text": "\"When she's ready. Leave her be. She deserves to handle the situation however she finds most comfortable. Imagine the shock of her awakening-inside a rebel host injured to the point of death in the escape attempt! No one should have to endure such trauma in times of peace!\" His voice rose with the increase of emotion.",
+      "translation": null,
+      "id": "e9fcb082-6c84-47bb-8134-ecb54d680db0",
+      "parent": 144,
+      "prev": 166
+    },
+    {
+      "text": "\"She is strong.\" The woman's tone was reassuring now. \"See how well she did with the first memory, the worst memory. Whatever she expected, she handled this.\"",
+      "translation": null,
+      "id": "5adae76c-9593-4ef5-8807-b6ebeac31439",
+      "parent": 144,
+      "prev": 167
+    },
+    {
+      "text": "\"Why should she have to?\" the man muttered, but he didn't seem to expect an answer.",
+      "translation": null,
+      "id": "14120247-f307-4b07-b69a-8b50c2b6c620",
+      "parent": 144,
+      "prev": 168
+    },
+    {
+      "text": "The woman answered anyway. \"If we're to get the information we need -\"",
+      "translation": null,
+      "id": "4b35dbf4-f113-4d4c-881a-8b1d1b4df9e0",
+      "parent": 144,
+      "prev": 169
+    },
+    {
+      "text": "\"Need being your word. I would choose the term want.\"",
+      "translation": null,
+      "id": "b69e3c7b-f3ea-4767-9d83-9d333e8be220",
+      "parent": 144,
+      "prev": 170
+    },
+    {
+      "text": "\"Then someone must take on the unpleasantness,\" she continued as if he had not interrupted. \"And I think, from all I know of this one, she would accept the challenge if there had been any way to ask her. What do you call her?\"",
+      "translation": null,
+      "id": "902e76ff-0422-458f-a3db-8880fbe58b31",
+      "parent": 144,
+      "prev": 171
+    },
+    {
+      "text": "The man didn't speak for a long moment. The woman waited.",
+      "translation": null,
+      "id": "8d513e8c-4522-464d-b42e-6e0c7cdafe29",
+      "parent": 144,
+      "prev": 172
+    },
+    {
+      "text": "\"Wanderer,\" he finally and unwillingly answered.",
+      "translation": null,
+      "id": "aac92382-3a7c-4ccd-9fe9-c82107cb6344",
+      "parent": 144,
+      "prev": 173
+    },
+    {
+      "text": "\"Fitting,\" she said. \"I don't have any official statistics, but she has to be one of the very few, if not the only one, who has wandered so far. Yes, Wanderer will suit her well until she chooses a new name for herself.\"",
+      "translation": null,
+      "id": "4514a3d4-7466-47fd-974a-296a2429e302",
+      "parent": 144,
+      "prev": 174
+    },
+    {
+      "text": "He said nothing.",
+      "translation": null,
+      "id": "61f0e78d-3e88-4d32-93c7-0d838bd12b26",
+      "parent": 144,
+      "prev": 175
+    },
+    {
+      "text": "\"Of course, she may assume the host's name.... We found no matches on record for the fingerprints or retinal scan. I can't tell you what that name was.\"",
+      "translation": null,
+      "id": "5ebfe5f8-2f89-4ede-af41-5a7c0627331e",
+      "parent": 144,
+      "prev": 176
+    },
+    {
+      "text": "\"She won't take the human name,\" the man muttered.",
+      "translation": null,
+      "id": "bd5a1bce-3cbc-4451-b029-875cf3bede32",
+      "parent": 144,
+      "prev": 177
+    },
+    {
+      "text": "Her response was conciliatory. \"Everyone finds comfort their own way.\"",
+      "translation": null,
+      "id": "82716973-6317-479b-8e6a-3621d082c04d",
+      "parent": 144,
+      "prev": 178
+    },
+    {
+      "text": "\"This Wanderer will need more comfort than most, thanks to your style of Seeking.\"",
+      "translation": null,
+      "id": "5a1b381d-dd74-4818-88d4-770607fc49f4",
+      "parent": 144,
+      "prev": 179
+    },
+    {
+      "text": "There were sharp sounds-footsteps, staccato against a hard floor. When she spoke again, the woman's voice was across the room from the man.",
+      "translation": null,
+      "id": "6ea4b724-4231-4c12-a2d3-04aa46580ed4",
+      "parent": 144,
+      "prev": 180
+    },
+    {
+      "text": "\"You would have reacted poorly to the early days of this occupation,\" she said.",
+      "translation": null,
+      "id": "4451e024-7bc1-4ebe-b41d-a84b348600da",
+      "parent": 144,
+      "prev": 181
+    },
+    {
+      "text": "\"Perhaps you react poorly to peace.\"",
+      "translation": null,
+      "id": "943fc7fe-a1ff-411b-bd11-0ae7053960d3",
+      "parent": 144,
+      "prev": 182
+    },
+    {
+      "text": "The woman laughed, but the sound was false-there was no real amusement. My mind seemed well adapted to inferring the true meanings from tones and inflections.",
+      "translation": null,
+      "id": "e9a324a7-56c6-4e0b-8452-8a82351c5b4d",
+      "parent": 144,
+      "prev": 183
+    },
+    {
+      "text": "\"You do not have a clear perception of what my Calling entails. Long hours hunched over files and maps. Mostly desk work. Not very often the conflict or violence you seem to think it is.\"",
+      "translation": null,
+      "id": "cf4c02a7-f11d-4dae-b6b2-f03095dd87ec",
+      "parent": 144,
+      "prev": 184
+    },
+    {
+      "text": "\"Ten days ago you were armed with killing weapons, running this body down.\"",
+      "translation": null,
+      "id": "29299c0c-ef69-489d-b959-d7be5ee424ea",
+      "parent": 144,
+      "prev": 185
+    },
+    {
+      "text": "\"The exception, I assure you, not the rule. Do not forget, the weapons that disgust you are turned on our kind wherever we Seekers have not been vigilant enough. The humans kill us happily whenever they have the ability to do so. Those whose lives have been touched by the hostility see us as heroes.\"",
+      "translation": null,
+      "id": "59783e44-9fbe-4f22-bb11-9114e4da71d6",
+      "parent": 144,
+      "prev": 186
+    },
+    {
+      "text": "\"You speak as if a war were raging.\"",
+      "translation": null,
+      "id": "fa03d9fc-1a25-4403-afae-2a354105af5b",
+      "parent": 144,
+      "prev": 187
+    },
+    {
+      "text": "\"To the remains of the human race, one is.\"",
+      "translation": null,
+      "id": "2e22b3e4-371e-493b-a414-ffc57135ee59",
+      "parent": 144,
+      "prev": 188
+    },
+    {
+      "text": "These words were strong in my ears. My body reacted to them; I felt my breathing speed, heard the sound of my heart pumping louder than was usual. Beside the bed I lay on, a machine registered the increases with a muted beeping. The Healer and the Seeker were too involved in their disagreement to notice.",
+      "translation": null,
+      "id": "cff9dfc8-080f-4dad-9882-3f2257038e7a",
+      "parent": 144,
+      "prev": 189
+    },
+    {
+      "text": "\"But one that even they must realize is long lost. They are outnumbered by what? A million to one? I imagine you would know.\"",
+      "translation": null,
+      "id": "6b5fa50d-151d-48f3-a8d1-d8ba29421fe6",
+      "parent": 144,
+      "prev": 190
+    },
+    {
+      "text": "\"We estimate the odds are quite a bit higher in our favor,\" she admitted grudgingly.",
+      "translation": null,
+      "id": "424d4f63-3d9f-4db7-9d28-8410b07122fd",
+      "parent": 144,
+      "prev": 191
+    },
+    {
+      "text": "The Healer appeared to be content to let his side of the disagreement rest with that information. It was quiet for a moment.",
+      "translation": null,
+      "id": "121e45f3-2710-4bc2-bdeb-bd205a836e13",
+      "parent": 144,
+      "prev": 192
+    },
+    {
+      "text": "I used the empty time to evaluate my situation. Much was obvious.",
+      "translation": null,
+      "id": "605619fd-0861-4990-8dd7-59af54f083cd",
+      "parent": 144,
+      "prev": 193
+    },
+    {
+      "text": "I was in a Healing facility, recovering from an unusually traumatic insertion. I was sure the body that hosted me had been fully healed before it was given to me. A damaged host would have been disposed of.",
+      "translation": null,
+      "id": "a1993feb-8146-4afe-8401-c5ae1c809578",
+      "parent": 144,
+      "prev": 194
+    },
+    {
+      "text": "I considered the conflicting opinions of the Healer and the Seeker. According to the information I had been given before making the choice to come here, the Healer had the right of it. Hostilities with the few remaining pockets of humans were all but over. The planet called Earth was as peaceful and serene as it looked from space, invitingly green and blue, wreathed in its harmless white vapors. As was the way of the soul, harmony was universal now.",
+      "translation": null,
+      "id": "2675c9e9-7779-43fc-b655-1382344a6dfa",
+      "parent": 144,
+      "prev": 195
+    },
+    {
+      "text": "The verbal dissension between the Healer and the Seeker was out of character. Strangely aggressive for our kind. It made me wonder. Could they be true, the whispered rumors that had undulated like waves through the thoughts of the... of the...",
+      "translation": null,
+      "id": "82b92e1b-4e2c-48b8-8030-763893b677ca",
+      "parent": 144,
+      "prev": 196
+    },
+    {
+      "text": "I was distracted, trying to find the name for my last host species. We'd had a name, I knew that. But, no longer connected to that host, I could not remember the word. We'd used much simpler language than this, a silent language of thought that connected us all into one great mind. A necessary convenience when one was rooted forever into the wet black soil.",
+      "translation": null,
+      "id": "9559fabc-587e-44c5-b65f-4df609df27a3",
+      "parent": 144,
+      "prev": 197
+    },
+    {
+      "text": "I could describe that species in my new human language. We lived on the floor of the great ocean that covered the entire surface of our world-a world that had a name, too, but that was also gone. We each had a hundred arms and on each arm a thousand eyes, so that, with our thoughts connected, not one sight in the vast waters went unseen. There was no need for sound, so there was no way to hear it. We tasted the waters, and, with our sight, that told us all we needed to know. We tasted the suns, so many leagues above the water, and turned their taste into the food we needed.",
+      "translation": null,
+      "id": "79073d8d-b489-4ad1-b050-d94568783e38",
+      "parent": 144,
+      "prev": 198
+    },
+    {
+      "text": "I could describe us, but I could not name us. I sighed for the lost knowledge, and then returned my ponderings to what I'd overheard.",
+      "translation": null,
+      "id": "5457bc76-f5d7-4f4b-b555-11ff27d27fa7",
+      "parent": 144,
+      "prev": 199
+    },
+    {
+      "text": "Souls did not, as a rule, speak anything but the truth. Seekers, of course, had the requirements of their Calling, but between souls there was never reason for a lie. With my last species' language of thought, it would have been impossible to lie, even had we wanted to. However, anchored as we were, we told ourselves stories to alleviate the boredom. Storytelling was the most honored of all talents, for it benefited everyone.",
+      "translation": null,
+      "id": "b0c8df80-82f2-4b38-9d26-160f9f84b33e",
+      "parent": 144,
+      "prev": 200
+    },
+    {
+      "text": "Sometimes, fact mixed with fiction so thoroughly that, though no lies were told, it was hard to remember what was strictly true.",
+      "translation": null,
+      "id": "3d071bac-b36c-4599-bf22-01fe7aa49c25",
+      "parent": 144,
+      "prev": 201
+    },
+    {
+      "text": "When we thought of the new planet-Earth, so dry, so varied, and filled with such violent, destructive denizens we could barely imagine them-our horror was sometimes overshadowed by our excitement. Stories spun themselves quickly around the thrilling new subject. The wars-wars! our kind having to fight!-were first reported accurately and then embellished and fictionalized. When the stories conflicted with the official information I sought out, I naturally believed the first reports.",
+      "translation": null,
+      "id": "c3dd87b7-c2df-45dc-9547-9b2e46636019",
+      "parent": 144,
+      "prev": 202
+    },
+    {
+      "text": "But there were whispers of this: of human hosts so strong that the souls were forced to abandon them. Hosts whose minds could not be completely suppressed. Souls who took on the personality of the body, rather than the other way around. Stories. Wild rumors. Madness.",
+      "translation": null,
+      "id": "32328336-5b4a-4d01-9c43-7bfcb2e52d8e",
+      "parent": 144,
+      "prev": 203
+    },
+    {
+      "text": "But that seemed almost to be the Healer's accusation....",
+      "translation": null,
+      "id": "2db37942-a423-4544-9128-b851f5a82925",
+      "parent": 144,
+      "prev": 204
+    },
+    {
+      "text": "I dismissed the thought. The more likely meaning of his censure was the distaste most of us felt for the Seeker's Calling. Who would choose a life of conflict and pursuit? Who would be attracted to the chore of tracking down unwilling hosts and capturing them? Who would have the stomach to face the violence of this particular species, the hostile humans who killed so easily, so thoughtlessly? Here, on this planet, the Seekers had become practically a... militia-my new brain supplied the term for the unfamiliar concept. Most believed that only the least civilized souls, the least evolved, the lesser among us, would be drawn to the path of Seeker.",
+      "translation": null,
+      "id": "4a721b49-c83c-452f-8a6b-28ba3412f90b",
+      "parent": 144,
+      "prev": 205
+    },
+    {
+      "text": "Still, on Earth the Seekers had gained new status. Never before had an occupation gone so awry. Never before had it turned into a fierce and bloody battle. Never before had the lives of so many souls been sacrificed. The Seekers stood as a mighty shield, and the souls of this world were thrice-over indebted to them: for the safety they had carved out of the mayhem, for the risk of the final death that they faced willingly every day, and for the new bodies they continued to provide.",
+      "translation": null,
+      "id": "05100fe0-82c4-4fa6-b172-eed90e3d51fe",
+      "parent": 144,
+      "prev": 206
+    },
+    {
+      "text": "Now that the danger was virtually past, it appeared the gratitude was fading. And, for this Seeker at least, the change was not a pleasant one.",
+      "translation": null,
+      "id": "295c2e9a-9765-43e3-82d1-49fdb424dd0f",
+      "parent": 144,
+      "prev": 207
+    },
+    {
+      "text": "It was easy to imagine what her questions for me would be. Though the Healer was trying to buy me time to adjust to my new body, I knew I would do my best to help the Seeker. Good citizenship was quintessential to every soul.",
+      "translation": null,
+      "id": "dd3aff24-c8a9-4eb7-ae29-f4c2e0c93e12",
+      "parent": 144,
+      "prev": 208
+    },
+    {
+      "text": "So I took a deep breath to prepare myself. The monitor registered the movement. I knew I was stalling a bit. I hated to admit it, but I was afraid. To get the information the Seeker needed, I would have to explore the violent memories that had made me scream in horror. More than that, I was afraid of the voice I'd heard so loudly in my head. But she was silent now, as was right. She was just a memory, too.",
+      "translation": null,
+      "id": "cc32b171-7ca9-4ef5-85e6-9036d3ebec89",
+      "parent": 144,
+      "prev": 209
+    },
+    {
+      "text": "I should not have been afraid. After all, I was called Wanderer now. And I'd earned the name.",
+      "translation": null,
+      "id": "4328e343-98da-49d2-ab6f-0ddc3086278b",
+      "parent": 144,
+      "prev": 210
+    },
+    {
+      "text": "With another deep breath, I delved into the memories that frightened me, faced them head-on with my teeth locked together.",
+      "translation": null,
+      "id": "41e6bbd5-4922-4485-95e4-30a013ef67e5",
+      "parent": 144,
+      "prev": 211
+    },
+    {
+      "text": "I could skip past the end-it didn't overwhelm me now. In fast-forward, I ran through the dark again, wincing, trying not to feel. It was over quickly.",
+      "translation": null,
+      "id": "4b6664d6-339b-4eaa-a422-12a036b5d5e5",
+      "parent": 144,
+      "prev": 212
+    },
+    {
+      "text": "Once I was through that barrier, it wasn't hard to float through less-alarming things and places, skimming for the information I wanted. I saw how she'd come to this cold city, driving by night in a stolen car chosen for its nondescript appearance. She'd walked through the streets of Chicago in darkness, shivering beneath her coat.",
+      "translation": null,
+      "id": "c5f67431-b108-4dda-9661-7400c555b58c",
+      "parent": 144,
+      "prev": 213
+    },
+    {
+      "text": "She was doing her own seeking. There were others like her here, or so she hoped. One in particular. A friend... no, family. Not a sister... a cousin.",
+      "translation": null,
+      "id": "5e911588-7f77-4016-983e-c69498a7ab5f",
+      "parent": 144,
+      "prev": 214
+    },
+    {
+      "text": "The words came slower and slower, and at first I did not understand why. Was this forgotten? Lost in the trauma of an almost death? Was I still sluggish from unconsciousness? I struggled to think clearly. This sensation was unfamiliar. Was my body still sedated? I felt alert enough, but my mind labored unsuccessfully for the answers I wanted.",
+      "translation": null,
+      "id": "49f7ac1e-ea8a-4f5b-9214-1fe0653c7cf2",
+      "parent": 144,
+      "prev": 215
+    },
+    {
+      "text": "I tried another avenue of searching, hoping for clearer responses. What was her goal? She would find... Sharon-I fished out the name-and they would...",
+      "translation": null,
+      "id": "fff54b06-8c97-4924-b66f-f696b11c4f86",
+      "parent": 144,
+      "prev": 216
+    },
+    {
+      "text": "I hit a wall.",
+      "translation": null,
+      "id": "7102cbae-b45c-4b35-a0a2-78dd7a1b9dae",
+      "parent": 144,
+      "prev": 217
+    },
+    {
+      "text": "It was a blank, a nothing. I tried to circle around it, but I couldn't find the edges of the void. It was as if the information I sought had been erased.",
+      "translation": null,
+      "id": "dca0d6d0-dd3f-4640-b52c-d7cc3fe13053",
+      "parent": 144,
+      "prev": 218
+    },
+    {
+      "text": "As if this brain had been damaged.",
+      "translation": null,
+      "id": "990a9e07-d857-420c-9140-e024a6796dc2",
+      "parent": 144,
+      "prev": 219
+    },
+    {
+      "text": "Anger flashed through me, hot and wild. I gasped in surprise at the unexpected reaction. I'd heard of the emotional instability of these human bodies, but this was beyond my ability to anticipate. In eight full lives, I'd never had an emotion touch me with such force.",
+      "translation": null,
+      "id": "087081fe-7b6d-4b10-bc5c-7cd50966ce95",
+      "parent": 144,
+      "prev": 220
+    },
+    {
+      "text": "I felt the blood pulse through my neck, pounding behind my ears. My hands tightened into fists.",
+      "translation": null,
+      "id": "c19ffff2-628b-43c8-a533-dfec88375c61",
+      "parent": 144,
+      "prev": 221
+    },
+    {
+      "text": "The machines beside me reported the acceleration of my heartbeats. There was a reaction in the room: the sharp tap of the Seeker's shoes approached me, mingled with a quieter shuffle that must have been the Healer.",
+      "translation": null,
+      "id": "460992bc-732b-4306-896b-2c1a62e47b65",
+      "parent": 144,
+      "prev": 222
+    },
+    {
+      "text": "\"Welcome to Earth, Wanderer,\" the female voice said.",
+      "translation": null,
+      "id": "675b73cd-0f46-4824-8367-38a1cb70a298",
+      "parent": 144,
+      "prev": 223
+    }
+  ]
+}
