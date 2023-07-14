@@ -90,6 +90,9 @@ def on_treeview_select(event):
         for child_item in treeview.get_children(item):
             text_widget.insert(tk.END, treeview.item(child_item)['text'] + '\n')  # Добавление значения
 
+            for new_child_item in treeview.get_children(child_item):
+                text_widget.insert(tk.END, treeview.item(new_child_item)['text'] + '\n')  # Добавление значения
+
 
 def setup_statusbar():
     global curr_book
