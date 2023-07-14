@@ -4,19 +4,6 @@ from tkinter import ttk
 import json
 
 
-def load_list_to_treeview(curr_treeview, element_list, parent=None):
-    # for element in element_list:
-    for index, element in enumerate(element_list):
-        if element.parent == parent:
-            item_id = curr_treeview.insert(
-                parent=parent if parent != None else '',
-                index="end",
-                text=element.text,  # в название элемента грузим первые 25 символов абзаца
-                values=[index, element]
-            )
-            load_list_to_treeview(curr_treeview=curr_treeview, element_list=element_list, parent=element)
-
-
 class Paragraph:
     def __init__(self, text, translation=None, parent=None, prev=None):
         self.__text = text
@@ -108,14 +95,10 @@ class Book:
 
     # Метод заполняет виджет treeview структурой документа
     def get_treeview(self, root):
-        # treeview.destroy()
         treeview = ttk.Treeview(root)
-        # treeview["columns"] = ("Par_index","Paragraph")
-        # treeview.heading("Par_index", text="Paragraph_index")
-        # treeview.heading("Paragraph", text="Paragraph")
         treeview.heading("#0", text="Абзац")
 
-        load_list_to_treeview(treeview, self.paragraphs)
+        self.load_list_to_treeview(treeview)
 
         # treeview.column("Paragraph", width=0, minwidth=0)
         # treeview.delete("Value")
@@ -160,6 +143,25 @@ class Book:
 
         self.paragraphs = list_paragraph
 
-
     def to_json(self):
         return json.dumps(self.__dict__)
+
+    # Метод получает на вход виджет treeview, очищает его и заполняет данными из реквизита paragraphs
+    def load_list_to_treeview(self, curr_treeview, parent=None, start_index=None, stop_index=None, parent_id=None):
+        if stop_index == None:
+            stop_index = len(self.paragraphs) - 1
+        if start_index == None:
+            start_index = 0
+
+        for index in range(start_index, stop_index):
+            curr_element = self.paragraphs[index]
+            if curr_element.parent == parent:
+                item_id = curr_treeview.insert(
+                    parent=parent_id if parent_id != None else '',
+                    index="end",
+                    text=curr_element.text,  # в название элемента грузим первые 25 символов абзаца
+                    values=[index]
+                # values = [index, curr_element]
+                )
+                self.load_list_to_treeview(curr_treeview=curr_treeview, parent=curr_element, start_index=index+1,
+                                           stop_index=stop_index, parent_id=item_id)

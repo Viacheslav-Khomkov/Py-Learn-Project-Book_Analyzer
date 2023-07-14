@@ -166,7 +166,6 @@ def load_text_file():
                 text_widget.insert(tk.END, line)
 
 
-
 def exit_app():
     root.destroy()
 
@@ -225,11 +224,10 @@ scan_text(const.TEXT_SAMPLE)
 text_widget = tk.Text(root, wrap=tk.WORD)
 text_widget.grid(row=0, column=2, columnspan=4)
 
-# Привязываем обработчик события "выделение текста"
 text_widget.bind("<ButtonRelease-1>", on_selection)
+# text_widget.insert(tk.END, const.TEXT_SAMPLE)
+scan_text(const.TEXT_SAMPLE)
 
-# Первоначальное заполнение - потом будем загружать файлы
-text_widget.insert(tk.END, const.TEXT_SAMPLE)
 
 # Добавляем кнопки на форму
 btn_select = tk.Button(root, text="Запомнить выделенное...", command=get_selected_items)
