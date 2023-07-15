@@ -61,23 +61,27 @@ def expand_all(treeview_, item_id=None):
         expand_all(treeview_, item_id)
 
 
+def load_new_treeview(currbook):
+    global root, treeview
+    treeview = currbook.get_treeview(root)
+    treeview.grid(row=0, column=0, sticky='nswe', columnspan=2)
+    treeview.bind("<<TreeviewSelect>>", on_treeview_select)
+
+    setup_statusbar()
+
+
 # Создаем объект Book,
 # Разбиваем текст по параграфам и заполняем объект текстом
 def scan_text(selected_text_):
-    global curr_book, root, treeview
+    global curr_book
     curr_book = bi.Book('Moby-Dick', 'Herman Melville', 'en', 1851)
 
     pars = selected_text_.split('\n')
     for item in pars:
         curr_book.append(item)
 
-    # Теперь заполняем дерево
-    # treeview.destroy()
-    treeview = curr_book.get_treeview(root)
-    treeview.grid(row=0, column=0, sticky='nswe', columnspan=2)
-    treeview.bind("<<TreeviewSelect>>", on_treeview_select)
+    load_new_treeview(curr_book)
 
-    setup_statusbar()
 
 def on_treeview_select(event):
     global treeview, curr_book
@@ -96,7 +100,9 @@ def on_treeview_select(event):
 
 def setup_statusbar():
     global curr_book
-    status_bar.configure(text=f'Книга: {curr_book._Book__bookname}. Автор: {curr_book._Book__author}. Год: {curr_book._Book__year}')
+    status_bar.configure(
+        text=f'Книга: {curr_book._Book__bookname}. Автор: {curr_book._Book__author}. Год: {curr_book._Book__year}')
+
 
 def new_book():
     answer = askquestion("Закрываем текущую книгу...",
@@ -108,13 +114,14 @@ def new_book():
             scan_text('')
             print('Starting new book? Ответ: ' + answer)
 
+
 def read_book():
     new_text = text_widget.get(1.0, tk.END)
     scan_text(new_text)
 
 
 def open_book():
-    global treeview, curr_book
+    global curr_book
     # Получение текущего каталога
     current_dir = os.getcwd()
 
@@ -123,20 +130,9 @@ def open_book():
     if file_path:
         print('Opening book: ' + file_path)
         with open(file_path, 'r') as file:
-            book_dict = json.load(file)
-            curr_book = bi.Book(
-                book_name=book_dict['bookname'],
-                author=book_dict['author'],
-                lang=book_dict['lang'],
-                year=book_dict['year'])
+            curr_book = bi.Book().load_from_json_file(file)
 
-            curr_book.from_dict(book_dict)
-
-        # Теперь заполняем дерево
-        treeview.destroy()
-        treeview = curr_book.get_treeview(root)
-        treeview.grid(row=0, column=0, sticky='nswe', columnspan=2)
-        treeview.bind("<<TreeviewSelect>>", on_treeview_select)
+        load_new_treeview(curr_book)
 
 
 def save_book():
@@ -151,6 +147,7 @@ def save_book():
             json.dump(curr_book.to_dict(), file, indent=2, ensure_ascii=False)
         file.close()
     # print(curr_book.to_dict())
+
 
 def load_text_file():
     global curr_book
@@ -175,6 +172,14 @@ def exit_app():
 
 root_ = tk.Tk()
 root_.title("Книга (оптимизированный интерфейс)")
+
+# %%%%%%%%%%%%%%%%%%%%% глобальные переменные %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+treeview = None
+select = None
+curr_book = None  # Ссылка на открытый файл с метаданными книги
+selected = None  # выбранные в дереве строки
+selected_text = tk.StringVar()  # для отображения статуса selected строк
+selected_text.set("<empty>")  # значение по умолчанию
 
 # Создаем меню File *********************************************************************************
 main_menu = Menu(root_)
@@ -202,7 +207,13 @@ toolbar.pack(side=TOP, fill=X)
 btn1 = Button(toolbar, text='Прочитать', command=read_book)
 btn1.grid(row=0, column=0, padx=2, pady=2)
 btn2 = Button(toolbar, text='Загрузить текст', command=load_text_file)
-btn2.grid(row=0, column=2, padx=2, pady=2)
+btn2.grid(row=0, column=1, padx=2, pady=2)
+btn3 = Button(toolbar, text='Запомнить выделенное...', command=get_selected_items)
+btn3.grid(row=0, column=2, padx=2, pady=2)
+btn4 = Button(toolbar, text='Привязать к выбранному', command=bind_selected_items)
+btn4.grid(row=0, column=3, padx=2, pady=2)
+lab = tk.Label(toolbar, textvariable=selected_text)
+lab.grid(row=0, column=4, padx=10, pady=10)
 
 # Statusbar ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 status_bar = Label(root_, relief=SUNKEN, anchor=W, text="Mission complete")
@@ -210,36 +221,23 @@ status_bar.pack(side=BOTTOM, fill=X)
 
 # Новый фрейм, чтобы размещать объекты в grid*********************************************
 root = Frame(root_)
-root.pack()
+root.pack(fill=tk.BOTH, expand=True)
 
-# %%%%%%%%%%%%%%%%%%%%% глобальные переменные %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-treeview = None
-select = None
-curr_book = None  # Ссылка на открытый файл с метаданными книги
-selected = None  # выбранные в дереве строки
-selected_text = tk.StringVar()  # для отображения статуса selected строк
-selected_text.set("<empty>")  # значение по умолчанию
-
-# Создаем виджет Treeview
+# Создаем и заполняем виджет Treeview
 scan_text(const.TEXT_SAMPLE)
 
 # ------------------------------------ Создаем виджет Text
 text_widget = tk.Text(root, wrap=tk.WORD)
-text_widget.grid(row=0, column=2, columnspan=4)
+# text_widget.grid(row=0, column=1)
+text_widget.grid(row=0, column=2, sticky='nswe', columnspan=2)
 
 text_widget.bind("<ButtonRelease-1>", on_selection)
-# text_widget.insert(tk.END, const.TEXT_SAMPLE)
-scan_text(const.TEXT_SAMPLE)
 
+root.update_idletasks()
 
-# Добавляем кнопки на форму
-btn_select = tk.Button(root, text="Запомнить выделенное...", command=get_selected_items)
-btn_select.grid(row=1, column=0, padx=10, pady=10)
-
-lab_selected = tk.Label(root, textvariable=selected_text)
-lab_selected.grid(row=1, column=1, padx=10, pady=10)
-
-btn_bind = tk.Button(root, text="Привязать к выбранному", command=bind_selected_items)
-btn_bind.grid(row=1, column=2, padx=10, pady=10)
+# Настройка расширения строк и столбцов
+root.grid_rowconfigure(0, weight=1)
+root.grid_columnconfigure(0, weight=0, minsize=400)
+root.grid_columnconfigure(2, weight=1)
 
 root.mainloop()

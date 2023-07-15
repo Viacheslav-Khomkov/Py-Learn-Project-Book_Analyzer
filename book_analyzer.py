@@ -100,8 +100,6 @@ class Book:
 
         self.load_list_to_treeview(treeview)
 
-        # treeview.column("Paragraph", width=0, minwidth=0)
-        # treeview.delete("Value")
         return treeview
 
     def to_dict(self):
@@ -146,12 +144,11 @@ class Book:
     def to_json(self):
         return json.dumps(self.__dict__)
 
-    # Метод получает на вход виджет treeview, очищает его и заполняет данными из реквизита paragraphs
+    # рекурсивный метод получает на вход виджет treeview и заполняет его данными из реквизита paragraphs
     def load_list_to_treeview(self, curr_treeview, parent=None, start_index=None, stop_index=None, parent_id=None):
-        if stop_index == None:
-            stop_index = len(self.paragraphs) - 1
-        if start_index == None:
-            start_index = 0
+
+        start_index = 0 if start_index is None else start_index
+        stop_index = len(self.paragraphs) - 1 if stop_index is None else stop_index
 
         for index in range(start_index, stop_index):
             curr_element = self.paragraphs[index]
@@ -161,7 +158,20 @@ class Book:
                     index="end",
                     text=curr_element.text,  # в название элемента грузим первые 25 символов абзаца
                     values=[index]
-                # values = [index, curr_element]
+                    # values = [index, curr_element]
                 )
-                self.load_list_to_treeview(curr_treeview=curr_treeview, parent=curr_element, start_index=index+1,
+                self.load_list_to_treeview(curr_treeview=curr_treeview, parent=curr_element, start_index=index + 1,
                                            stop_index=stop_index, parent_id=item_id)
+
+    @staticmethod
+    def load_from_json_file(file):
+        book_dict = json.load(file)
+
+        curr_book = Book(
+            book_name=book_dict['bookname'],
+            author=book_dict['author'],
+            lang=book_dict['lang'],
+            year=book_dict['year'])
+
+        curr_book.from_dict(book_dict)
+        return curr_book
