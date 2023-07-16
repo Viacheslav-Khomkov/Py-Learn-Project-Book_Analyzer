@@ -5,8 +5,6 @@ from tkinter import filedialog
 
 from idlelib.tooltip import Hovertip
 
-from PIL import Image, ImageTk
-
 import json
 import os
 import keyboard
@@ -72,9 +70,11 @@ def load_new_treeview():
 
     setup_statusbar()
 
+
 def feel_book_attr():
     book_name.set(curr_book.book_name)
     book_author.set(curr_book.author)
+
 
 # Создаем объект Book, разбиваем текст по параграфам и заполняем объект текстом
 def scan_text(selected_text_):
@@ -88,10 +88,10 @@ def scan_text(selected_text_):
     load_new_treeview()
 
 
-def on_treeview_select(event):
+def on_treeview_select(event):  # Очищаем текст и заполняем его выделенными абзацами
     selected_items = treeview.selection()
-    # Очищаем текст и заполняем его выделенными абзацами
-    text_widget.delete("1.0", tk.END)  # Очистка текста
+    text_widget.delete("1.0", tk.END)
+
     for item in selected_items:
         text_widget.insert(tk.END, treeview.item(item)['text'] + '\n')  # Добавление значения
 
@@ -167,17 +167,50 @@ def load_text_file():
 def exit_app():
     root.destroy()
 
+
 def on_enter_book_name(event):
     book_name.set(entry_book_name.get())
+
 
 def on_enter_book_author(event):
     book_author.set(entry_book_author.get())
 
-def bind_level_up():
+
+def get_items_with_value(treeview, target_values):
+    result_items = []
+
+    def check_items(item_id):
+        value = treeview.item(item_id)['values'][0]
+        if value in target_values:
+            result_items.append(item_id)
+
+        for child_id in treeview.get_children(item_id):
+            check_items(child_id)
+
+    for item_id in treeview.get_children(''):
+        check_items(item_id)
+
+    return result_items
+
+def bind_level_up():  # Получаем индекс текущей строки дерева и вызываем в curr_book метод level_up
+    """
+    Получаем индекс текущего элемента дерева и для него вызываем метод paragraph_level_up
+    Если возвращается не пустой список, то все возвращенные элементы перемещаем в подчинение к текущему
+    """
+    selected_items = treeview.selection()
+    new_parent_in_tree = selected_items[0]
+    par_index_of_new_parent = treeview.item(new_parent_in_tree)['values'][0]
+
+    list_of_change = curr_book.paragraph_level_up(par_index_of_new_parent)
+    list_of_items = get_items_with_value(treeview, list_of_change)
+    for item in list_of_items:
+        treeview.move(item, new_parent_in_tree, 1000)
+
+
+
+def bind_level_down():  # Получаем индекс текущей строки дерева и вызываем в curr_book метод level_down
     pass
 
-def bind_level_down():
-    pass
 
 root = tk.Tk()
 root.title("Помощник чтения книг")
@@ -195,9 +228,6 @@ book_author = tk.StringVar()  # для отображения и смены ав
 book_author.set("<empty>")  # значение по умолчанию
 
 # ***************** Создаем меню File и его команды *******************************************************
-
-
-
 main_menu = tk.Menu(root)
 root.configure(menu=main_menu)
 
