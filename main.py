@@ -3,6 +3,10 @@ from tkinter import ttk
 from tkinter.messagebox import *
 from tkinter import filedialog
 
+from idlelib.tooltip import Hovertip
+
+from PIL import Image, ImageTk
+
 import json
 import os
 import keyboard
@@ -68,6 +72,9 @@ def load_new_treeview():
 
     setup_statusbar()
 
+def feel_book_attr():
+    book_name.set(curr_book.book_name)
+    book_author.set(curr_book.author)
 
 # Создаем объект Book, разбиваем текст по параграфам и заполняем объект текстом
 def scan_text(selected_text_):
@@ -81,7 +88,7 @@ def scan_text(selected_text_):
     load_new_treeview()
 
 
-def on_treeview_select():
+def on_treeview_select(event):
     selected_items = treeview.selection()
     # Очищаем текст и заполняем его выделенными абзацами
     text_widget.delete("1.0", tk.END)  # Очистка текста
@@ -96,7 +103,6 @@ def on_treeview_select():
 
 
 def setup_statusbar():
-    global curr_book
     status_bar.configure(
         text=f'Книга: {curr_book.book_name}. Автор: {curr_book.author}. Год: {curr_book.year}')
 
@@ -108,6 +114,9 @@ def new_book():
         if answer == 'yes':
             text_widget.delete('1.0', tk.END)
             scan_text('')
+            status_bar.configure(
+                text=f'Книга: <>. Автор:<>. Год: <>')
+
             print('Starting new book? Ответ: ' + answer)
 
 
@@ -126,6 +135,7 @@ def open_book():
         curr_book = bi.Book.load_from_json_file(file_path)
 
         load_new_treeview()
+        feel_book_attr()
 
 
 def save_book():
@@ -157,6 +167,17 @@ def load_text_file():
 def exit_app():
     root.destroy()
 
+def on_enter_book_name(event):
+    book_name.set(entry_book_name.get())
+
+def on_enter_book_author(event):
+    book_author.set(entry_book_author.get())
+
+def bind_level_up():
+    pass
+
+def bind_level_down():
+    pass
 
 root = tk.Tk()
 root.title("Помощник чтения книг")
@@ -168,40 +189,83 @@ curr_book: bi.Book = None  # Ссылка на открытый файл с ме
 selected: list = None  # выбранные в дереве строки
 selected_text = tk.StringVar()  # для отображения статуса selected строк
 selected_text.set("<empty>")  # значение по умолчанию
+book_name = tk.StringVar()  # для отображения и смены названия книги
+book_name.set("<empty>")  # значение по умолчанию
+book_author = tk.StringVar()  # для отображения и смены автора книги
+book_author.set("<empty>")  # значение по умолчанию
 
 # ***************** Создаем меню File и его команды *******************************************************
+
+
+
 main_menu = tk.Menu(root)
 root.configure(menu=main_menu)
 
+# Инициализируем иконки
+open_icon, remember_icon, save_icon, logo_icon, level_up_icon, level_down_icon, \
+    link_to_icon, load_icon, new_file_icon, exit_icon, scan_doc_icon = const.initialize_icons()
+
 first_item = tk.Menu(main_menu, tearoff=0)
 main_menu.add_cascade(label="File", menu=first_item)
-first_item.add_command(label="New", command=new_book, accelerator="Ctrl+N")
-first_item.add_command(label="Open", command=open_book, accelerator="Ctrl+O")
-first_item.add_command(label="Save", command=save_book, accelerator="Ctrl+S")
+first_item.add_command(label="(New) Создать новую книгу", command=new_book,
+                       accelerator="Ctrl+N", image=new_file_icon, compound=tk.LEFT)
+first_item.add_command(label="(Open) Открыть книгу", command=open_book,
+                       accelerator="Ctrl+O", image=open_icon, compound=tk.LEFT)
+first_item.add_command(label="(Save as) Сохранить текущую книгу как", command=save_book,
+                       accelerator="Ctrl+S", image=save_icon, compound=tk.LEFT)
+first_item.add_command(label="(Load) Загрузить текст из файла", command=save_book,
+                       accelerator="Ctrl+S", image=load_icon, compound=tk.LEFT)
 first_item.add_separator()
-first_item.add_command(label="Exit", command=exit_app)
+first_item.add_command(label="(Exit) Завершить приложение", command=exit_app, image=exit_icon, compound=tk.LEFT)
 
 # Привязка "горячих клавиш" к командам меню
 keyboard.add_hotkey("Ctrl + N", new_book)
 keyboard.add_hotkey("Ctrl + O", open_book)
 keyboard.add_hotkey("Ctrl + S", save_book)
 keyboard.add_hotkey("Ctrl + R", read_book)
+keyboard.add_hotkey("Ctrl + L", load_text_file)
 
 # Новый Frame для кнопок панели инструментов ++++++++++++++++++++++++++++++++++++++
 toolbar = tk.Frame(root)
 toolbar.pack(side=tk.TOP, fill=tk.X)
 
 # Menu
-btn1 = tk.Button(toolbar, text='Прочитать', command=read_book)
+btn1 = tk.Button(toolbar, command=read_book, image=scan_doc_icon, compound=tk.LEFT)
+Hovertip(btn1, 'Прочитать загруженный текст и заполнить книгу!')
 btn1.grid(row=0, column=0, padx=2, pady=2)
-btn2 = tk.Button(toolbar, text='Загрузить текст', command=load_text_file)
+
+btn2 = tk.Button(toolbar, command=get_selected_items, image=remember_icon, compound=tk.LEFT)
+Hovertip(btn2, 'Запомнить список выделенных строк!')
 btn2.grid(row=0, column=1, padx=2, pady=2)
-btn3 = tk.Button(toolbar, text='Запомнить выделенное...', command=get_selected_items)
+
+btn3 = tk.Button(toolbar, command=bind_selected_items, image=link_to_icon, compound=tk.LEFT)
+Hovertip(btn3, 'Привязать выделенные к текущей строке')
 btn3.grid(row=0, column=2, padx=2, pady=2)
-btn4 = tk.Button(toolbar, text='Привязать к выбранному', command=bind_selected_items)
+
+btn4 = tk.Button(toolbar, command=bind_level_up, image=level_up_icon, compound=tk.LEFT)
+Hovertip(btn4, 'Заголовок уровнем выше')
 btn4.grid(row=0, column=3, padx=2, pady=2)
+
+btn5 = tk.Button(toolbar, command=bind_level_down, image=level_down_icon, compound=tk.LEFT)
+Hovertip(btn5, 'Заголовок уровнем ниже')
+btn5.grid(row=0, column=4, padx=2, pady=2)
+
 lab = tk.Label(toolbar, textvariable=selected_text)
-lab.grid(row=0, column=4, padx=10, pady=10)
+lab.grid(row=0, column=5, padx=10, pady=2)
+
+label_book_name = tk.Label(toolbar, text="Книга:")
+label_book_name.grid(row=0, column=6, padx=10, pady=2)
+
+entry_book_name = tk.Entry(toolbar, width=50, textvariable=book_name)
+entry_book_name.grid(row=0, column=7, padx=10, pady=2)
+entry_book_name.bind("<Return>", on_enter_book_name)
+
+label_book_author = tk.Label(toolbar, text="Автор:")
+label_book_author.grid(row=0, column=8, padx=10, pady=2)
+
+entry_book_author = tk.Entry(toolbar, width=50, textvariable=book_author)
+entry_book_author.grid(row=0, column=9, padx=10, pady=2)
+entry_book_author.bind("<Return>", on_enter_book_author)
 
 # Statusbar ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 status_bar = tk.Label(root, relief=tk.SUNKEN, anchor=tk.W, text="Mission complete")

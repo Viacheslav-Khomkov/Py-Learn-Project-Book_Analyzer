@@ -102,7 +102,7 @@ class Book:
     def self_to_dict(self):  # возвращаем словарь реквизитов для упаковки в json
         data_par: dict[int, dict[Paragraph]] = {}
         for cur_par in self.paragraphs:
-            data_par[cur_par.ind] = cur_par.self_to_dict()
+            data_par[cur_par] = self.paragraphs[cur_par].self_to_dict()
 
         return {
             'book_name': self.__book_name,
@@ -117,7 +117,7 @@ class Book:
         new_book = Book(book_name=cur_dict['book_name'], author=cur_dict['author'], lang=cur_dict['lang'],
                         year=cur_dict['year'])
         for par in cur_dict['paragraphs']:
-            new_book.paragraphs[par['ind']] = Paragraph.dict_to_paragraph(par)
+            new_book.paragraphs[int(par)] = Paragraph.dict_to_paragraph(cur_dict['paragraphs'][par])
 
         return new_book
 
@@ -148,7 +148,7 @@ class Book:
                     parent=treeview_parent_id,
                     index="end",
                     text=curr_element.text,
-                    values=[index]
+                    values=[str(index)]
                 )
                 self.load_list_to_treeview(curr_treeview=curr_treeview, cur_ind=index, stop_index=stop_index,
                                            treeview_parent_id=new_treeview_item_id)
