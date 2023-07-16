@@ -130,7 +130,7 @@ def open_book():
     if file_path:
         print('Opening book: ' + file_path)
         with open(file_path, 'r') as file:
-            curr_book = bi.Book().load_from_json_file(file)
+            curr_book = bi.Book.load_from_json_file(file)
 
         load_new_treeview(curr_book)
 
