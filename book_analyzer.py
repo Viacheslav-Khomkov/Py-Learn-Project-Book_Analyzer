@@ -62,6 +62,13 @@ class Paragraph:
         return Paragraph(ind=cur_dict['ind'], text=cur_dict['text'], translation=cur_dict['translation'],
                          parent_ind=cur_dict['parent_ind'], level=cur_dict['level'])
 
+    def get_indent(self):  # Получаем отступ для элемента
+        # indent = ''
+        # for i in range(5 - self.level):
+        #     indent += ' '
+        # return indent
+        return f'({self.level})' if self.level > 0 else ''
+
 
 # Описание класса Book
 # содержит реквизиты книги и словарь абзацев
@@ -143,49 +150,54 @@ class Book:
 
         for index in range(cur_ind + 1, stop_index):
             curr_element = self.paragraphs[index]
-            if curr_element.parent_ind == cur_ind:  # Обрабатываем только подчиненные элементы
-                new_treeview_item_id = curr_treeview.insert(
-                    parent=treeview_parent_id,
-                    index="end",
-                    text=curr_element.text,
-                    values=[str(index)]
-                )
-                self.load_list_to_treeview(curr_treeview=curr_treeview, cur_ind=index, stop_index=stop_index,
-                                           treeview_parent_id=new_treeview_item_id)
+            new_treeview_item_id = curr_treeview.insert(
+                parent=treeview_parent_id,
+                index="end",
+                text=curr_element.get_indent() + curr_element.text,
+                values=[str(index)]
+            )
 
     def paragraph_level_up(self, par_index: int) -> list[int]:
         """
         У текущей строки изменился уровень вверх - перепривязываем все следующие элементы с уровнем меньше текущего
         пока не встретим заголовок (level > 0)
         """
-        list_of_children = []
+        list_of_children = []  # Используем для возврата списка дочерних элементов и перемещения их в новую группу
         curr_paragraph = self.paragraphs[par_index]
         curr_level = curr_paragraph.level
-        if curr_level >= 5:
+        if curr_level == 5:
             return list_of_children
 
         curr_paragraph.level += 1
         curr_level += 1
 
-        # Сначала проверяем нашего родителя. Если уровень родителя равен нашему
-        # Устанавливаем у нас родителя нашего родителя
+        # Если уровень текущего родителя равен нашему устанавливаем у нас родителем его родителя
         parent_ind = curr_paragraph.parent_ind
-        if parent_ind != -1:
-            if self.paragraphs[parent_ind].level == curr_level:
-                curr_paragraph.parent_ind = self.paragraphs[parent_ind].parent_ind
+        if parent_ind != -1 and self.paragraphs[parent_ind].level == curr_level:
+            curr_paragraph.parent_ind = self.paragraphs[parent_ind].parent_ind
 
-        # Теперь пробегаем по следующим строкам
-        last_index = len(self.paragraphs)
-        local_parent_index = -1
-        for index in range(par_index+1, last_index):
-            if local_parent_index != -1 and self.paragraphs[index].parent_ind == local_parent_index:
+        # Теперь пробегаем по следующим строкам и переподчиняем с более низким уровнем
+        continue_index = None  # это нужно чтобы пропускать элементы, принадлежащие вложенным группам
+        for index in range(par_index + 1, len(self.paragraphs)):
+            next_par = self.paragraphs[index]
+            if next_par.parent_ind == continue_index:
                 continue
-            if self.paragraphs[index].level < curr_level:
-                self.paragraphs[index].parent_ind = par_index  # Записываем у него индекс нового родителя
-                list_of_children.append(index)
-                if self.paragraphs[index].level > 0:  # Если это группа - пропускаем ее "детей"
-                    local_parent_index = index
             else:
-                break
+                continue_index = None  # Вложенная группа закончилась - продолжаем анализ
+
+            if next_par.level == 0:
+                next_par.parent_ind = par_index  # Мы новый родитель
+                list_of_children.append(index)
+            else:
+                if next_par.level < curr_level:
+                    next_par.parent_ind = par_index
+                    list_of_children.append(index)
+
+                if next_par.level < curr_level: # Это группа и у нее уровень меньше чем текущий - пропускаем
+                    continue_index = index
+                    continue
+
+                else:
+                    break
 
         return list_of_children

@@ -199,9 +199,9 @@ def bind_level_up():  # Получаем индекс текущей строк�
     """
     selected_items = treeview.selection()
     new_parent_in_tree = selected_items[0]
-    par_index_of_new_parent = treeview.item(new_parent_in_tree)['values'][0]
+    par_index_of_new_parent = int(treeview.item(new_parent_in_tree)['values'][0])
 
-    list_of_change = curr_book.paragraph_level_up(par_index_of_new_parent)
+    list_of_change = curr_book.paragraph_level_up(par_index=par_index_of_new_parent)
     list_of_items = get_items_with_value(treeview, list_of_change)
     for item in list_of_items:
         treeview.move(item, new_parent_in_tree, 1000)
@@ -209,7 +209,22 @@ def bind_level_up():  # Получаем индекс текущей строк�
 
 
 def bind_level_down():  # Получаем индекс текущей строки дерева и вызываем в curr_book метод level_down
-    pass
+    selected_item = treeview.selection()
+
+    if not selected_item:
+        return
+
+    parent_item = treeview.parent(selected_item)
+
+    if not parent_item:
+        return
+
+    children = treeview.get_children(parent_item)
+    index = children.index(selected_item)
+
+    if index > 0:
+        previous_item = children[index - 1]
+        treeview.move(selected_item, parent_item, index - 1)
 
 
 root = tk.Tk()
